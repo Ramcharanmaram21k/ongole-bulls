@@ -5,6 +5,7 @@ import HelpSection from "../HelpSection/HelpSection.jsx"
 import KeyQuestions from "../KeyQuestions/KeytQuestions.jsx"
 import AboutUsSection from "../AboutUsSection/AboutUsSection.jsx"
 import FinancialServices from "../FinancialServices/FinancialServices.jsx"
+import DataSecuritySection from "../DataSecurity/DataSecuritySection.jsx"
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <KeyQuestions />
             <AboutUsSection />
             <FinancialServices />
+            <DataSecuritySection />
 
 
         </div>
