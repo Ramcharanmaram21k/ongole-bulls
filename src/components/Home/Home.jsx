@@ -5,7 +5,10 @@ import HelpSection from "../HelpSection/HelpSection.jsx"
 import KeyQuestions from "../KeyQuestions/KeytQuestions.jsx"
 import AboutUsSection from "../AboutUsSection/AboutUsSection.jsx"
 import FinancialServices from "../FinancialServices/FinancialServices.jsx"
+import CorePrinciples from "../CorePrinciples/CorePrinciples.jsx"
 import DataSecuritySection from "../DataSecurity/DataSecuritySection.jsx"
+import WhyChooseUs from "../WhyChooseUs/WhyChooseUs.jsx"
+
 
 function Home() {
     return (
@@ -16,7 +19,10 @@ function Home() {
             <KeyQuestions />
             <AboutUsSection />
             <FinancialServices />
+            <CorePrinciples />
             <DataSecuritySection />
+            <WhyChooseUs />
+
 
 
         </div>

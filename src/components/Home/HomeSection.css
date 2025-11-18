@@ -134,11 +134,24 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     color: #000;
     font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.my-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: #fff8f0;
 }
 
 .my-badge i {
     font-size: 20px;
     color: #d44a1c;
+    transition: transform 0.3s ease;
+}
+
+.my-badge:hover i {
+    transform: scale(1.2);
 }
 
 .badge {
@@ -172,12 +185,26 @@
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background: #fffbf5;
 }
 
 .feature-icon {
     font-size: 42px;
     color: #d44a1c;
     margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.15);
+    color: #bf3f15;
 }
 
 .feature-icon i {
@@ -189,6 +216,11 @@
     margin-bottom: 10px;
     font-weight: 600;
     color: #111;
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover h3 {
+    color: #d44a1c;
 }
 
 .feature-card p {

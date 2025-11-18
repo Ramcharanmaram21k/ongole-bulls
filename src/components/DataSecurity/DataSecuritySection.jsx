@@ -3,7 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "./DataSecuritySection.css";
 import securityImage from "../../assets/data-security2.png";
 
-const securityFeatures = [
+const securityFeatures =     [
     {
         id: 1,
         icon: "bi-lock-fill",

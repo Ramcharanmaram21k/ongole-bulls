@@ -11,7 +11,8 @@ const helpCards = [
         title: "Smart Wealth Building",
         frontText: "Smart Wealth Building",
         backTitle: "Smart Wealth Building",
-        backDescription: "Build a diversified portfolio with expert guidance. Our team helps you make informed decisions to grow your wealth steadily and securely."
+        backDescription: "We provide personalized strategies to help you build a diversified portfolio that aligns with your long-term goals " +
+            " Whether you're investing in mutual funds, stocks, or real estate, we ensure smart, consistent growth through expert guidance and risk management"
     },
     {
         id: 2,
