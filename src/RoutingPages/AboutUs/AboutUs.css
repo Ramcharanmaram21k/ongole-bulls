@@ -1,11 +1,11 @@
 /* About Us Page - Premium Styling */
-.about-us-page {
+.page-about-us {
     font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif;
     background: #ffffff;
 }
 
 /* Hero Section */
-.about-hero {
+.page-about-hero {
     position: relative;
     height: 400px;
     background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 
-.about-hero::before {
+.page-about-hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -26,21 +26,21 @@
     opacity: 0.5;
 }
 
-.hero-overlay {
+.page-hero-overlay {
     position: relative;
     z-index: 1;
     text-align: center;
     color: white;
 }
 
-.hero-title {
+.page-hero-title {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 15px;
     animation: fadeInUp 0.8s ease-out;
 }
 
-.hero-subtitle {
+.page-hero-subtitle {
     font-size: 1.4rem;
     font-weight: 300;
     opacity: 0.95;
@@ -48,12 +48,12 @@
 }
 
 /* About Intro Section */
-.about-intro {
+.page-about-intro {
     padding: 100px 20px;
     background: #f8f9fa;
 }
 
-.about-container {
+.page-about-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -62,30 +62,30 @@
     align-items: center;
 }
 
-.intro-image {
+.page-intro-image {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.intro-image:hover {
+.page-intro-image:hover {
     transform: scale(1.05) translateY(-10px);
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
 }
 
-.intro-image img {
+.page-intro-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.intro-content {
+.page-intro-content {
     padding: 20px;
 }
 
-.intro-text {
+.page-intro-text {
     font-size: 1.15rem;
     line-height: 2;
     color: #4a5568;
@@ -93,17 +93,17 @@
 }
 
 /* Our Values Section */
-.values-section {
+.page-values-section {
     padding: 100px 20px;
     background: white;
 }
 
-.values-container {
+.page-values-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.section-title {
+.page-section-title {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
@@ -112,7 +112,7 @@
     position: relative;
 }
 
-.section-title::after {
+.page-section-title::after {
     content: '';
     display: block;
     width: 80px;
@@ -122,13 +122,13 @@
     border-radius: 2px;
 }
 
-.values-grid {
+.page-values-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
-.value-card {
+.page-value-card {
     background: #f8f9fa;
     padding: 45px 35px;
     border-radius: 16px;
@@ -138,14 +138,14 @@
     cursor: pointer;
 }
 
-.value-card:hover {
+.page-value-card:hover {
     background: white;
     border-color: #1a237e;
     transform: translateY(-15px);
     box-shadow: 0 20px 50px rgba(26, 35, 126, 0.15);
 }
 
-.value-icon {
+.page-value-icon {
     width: 80px;
     height: 80px;
     background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
@@ -157,35 +157,35 @@
     transition: transform 0.4s ease;
 }
 
-.value-card:hover .value-icon {
+.page-value-card:hover .page-value-icon {
     transform: scale(1.15) rotate(10deg);
 }
 
-.value-icon i {
+.page-value-icon i {
     font-size: 2rem;
     color: white;
 }
 
-.value-card h3 {
+.page-value-card h3 {
     font-size: 1.8rem;
     color: #0d1b2a;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
-.value-card p {
+.page-value-card p {
     font-size: 1rem;
     line-height: 1.8;
     color: #4a5568;
 }
 
 /* Vision & Mission Section */
-.vision-mission-section {
+.page-vision-mission-section {
     padding: 100px 20px;
     background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-.vision-mission-container {
+.page-vision-mission-container {
     max-width: 1300px;
     margin: 0 auto;
     display: grid;
@@ -193,7 +193,7 @@
     gap: 50px;
 }
 
-.vm-card {
+.page-vm-card {
     background: white;
     border-radius: 20px;
     padding: 50px 40px;
@@ -202,13 +202,13 @@
     border: 2px solid transparent;
 }
 
-.vm-card:hover {
+.page-vm-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 25px 70px rgba(26, 35, 126, 0.2);
     border-color: #1a237e;
 }
 
-.vm-content h2 {
+.page-vm-content h2 {
     font-size: 2.5rem;
     color: #1a237e;
     margin-bottom: 30px;
@@ -216,7 +216,7 @@
     text-align: center;
 }
 
-.vm-image {
+.page-vm-image {
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 30px;
@@ -224,64 +224,22 @@
     transition: transform 0.4s ease;
 }
 
-.vm-card:hover .vm-image {
+.page-vm-card:hover .page-vm-image {
     transform: scale(1.05);
 }
 
-.vm-image img {
+.page-vm-image img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     display: block;
 }
 
-.vm-content p {
+.page-vm-content p {
     font-size: 1.1rem;
     line-height: 1.9;
     color: #4a5568;
     text-align: center;
-}
-
-/* Stats Section */
-.stats-section {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
-}
-
-.stats-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-}
-
-.stat-item {
-    text-align: center;
-    color: white;
-    padding: 30px 20px;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.stat-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-10px);
-}
-
-.stat-item h3 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #ffd54f;
-}
-
-.stat-item p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    opacity: 0.95;
 }
 
 /* Animations */
@@ -298,51 +256,95 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .about-container,
-    .vision-mission-container {
+    .page-about-container,
+    .page-vision-mission-container {
         grid-template-columns: 1fr;
         gap: 50px;
     }
 
-    .values-grid {
+    .page-values-grid {
         grid-template-columns: 1fr;
-    }
-
-    .stats-container {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .hero-title {
+    .page-about-hero {
+        height: 300px;
+    }
+
+    .page-hero-title {
         font-size: 2.5rem;
     }
 
-    .hero-subtitle {
+    .page-hero-subtitle {
         font-size: 1.1rem;
     }
 
-    .section-title {
+    .page-section-title {
         font-size: 2rem;
     }
 
-    .about-intro,
-    .values-section,
-    .vision-mission-section {
+    .page-about-intro,
+    .page-values-section,
+    .page-vision-mission-section {
         padding: 60px 20px;
     }
 
-    .stats-container {
-        grid-template-columns: 1fr;
+    .page-intro-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .page-value-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .page-vm-content h2 {
+        font-size: 2rem;
+    }
+
+    .page-vm-content p {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .hero-title {
+    .page-about-hero {
+        height: 250px;
+    }
+
+    .page-hero-title {
         font-size: 2rem;
     }
 
-    .stat-item h3 {
-        font-size: 2.5rem;
+    .page-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .page-about-intro,
+    .page-values-section,
+    .page-vision-mission-section {
+        padding: 40px 15px;
+    }
+
+    .page-value-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .page-value-icon i {
+        font-size: 1.7rem;
+    }
+
+    .page-value-card {
+        padding: 35px 25px;
+    }
+
+    .page-vm-card {
+        padding: 35px 25px;
+    }
+
+    .page-vm-image img {
+        height: 200px;
     }
 }

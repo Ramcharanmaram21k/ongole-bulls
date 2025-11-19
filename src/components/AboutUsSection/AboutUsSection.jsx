@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./AboutUsSection.css";
-import teamImage from "../../assets/abot us.jpeg";
+import teamImage from "../../assets/abotus.jpeg";
 
 const features = [
     {
