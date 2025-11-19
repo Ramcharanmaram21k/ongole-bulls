@@ -2,18 +2,24 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header.jsx';
 import Home from './components/Home/Home.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import AppointmentForm from './RoutingPages/AppointmentForm/AppointmentForm.jsx';
+import ContactForm from './RoutingPages/ContactForm/ContactForm.jsx'
+import AboutUs from './RoutingPages/AboutUs/AboutUs.jsx';
 
 function App() {
     return (
-        <div>
-            <BrowserRouter>
+        <BrowserRouter>
+            <div>
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/AppointmentForm" element={<AppointmentForm />} />
+                    <Route path="/ContactForm" element={<ContactForm /> } />
+                    <Route path="/AboutUs" element={<AboutUs />} />
                 </Routes>
                 <Footer />
-            </BrowserRouter>
-        </div>
+            </div>
+        </BrowserRouter>
     );
 }
 

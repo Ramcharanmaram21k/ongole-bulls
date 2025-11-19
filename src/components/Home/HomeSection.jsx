@@ -9,6 +9,10 @@ export default function HomeSection() {
     const rootRef = useRef(null);
     const navigate = useNavigate();
 
+    const handleClick = () => {
+        navigate("/AppointmentForm");
+    }
+
     useEffect(() => {
         const el = rootRef.current;
         if (el) el.classList.add("is-visible");
@@ -40,7 +44,7 @@ export default function HomeSection() {
 
                         <button
                             type="button"
-
+                            onClick={handleClick}
                             className="secondary-btn"
                         >
                             Book an Appointment
@@ -62,7 +66,7 @@ export default function HomeSection() {
             <div className="badges-wrapper">
                 <div className="badges">
                     <div className="my-badge"><i className="bi bi-shield-check"></i> Trusted by 5,000+ Investors</div>
-                    <div className="my-badge"><i className="bi bi-unlock"></i> SEBI Registered</div>
+                    <div className="my-badge"><i className="bi bi-unlock"></i> AMFI & APMI Registered</div>
                     <div className="my-badge"><i className="bi bi-bar-chart-line"></i> 95% Client Retention</div>
                 </div>
             </div>

@@ -1,17 +1,18 @@
 import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
+
 import "./KeyQuestions.css"
 
 const questions = [
     {
         id: 1,
-        icon: "bi-check-square",
+        icon: "bi-calendar-check",
         color: "#7B3FF2",
         question: "What do I want to achieve with my money in the next 5, 10, or 20 years?"
     },
     {
         id: 2,
-        icon: "bi-slash-circle",
+        icon: "bi-compass",
         color: "#10B981",
         question: "Am I on track to meet my goals, or do I need expert advice?"
     },
@@ -24,6 +25,9 @@ const questions = [
 ];
 
 function KeyQuestions() {
+
+
+
     return (
         <section className="wealth-journey-section">
             <div className="wealth-journey-container">
@@ -45,7 +49,7 @@ function KeyQuestions() {
                     ))}
                 </div>
 
-                <button className="wealth-cta-button">
+                <button className="wealth-cta-button"  >
                     Plan My Wealth Goals
                 </button>
             </div>

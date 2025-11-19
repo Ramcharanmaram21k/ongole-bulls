@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo4.png";
+import {useNavigate, Link} from 'react-router-dom'
 import "./Header.css";
 
 function Header() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null);
+    const navigate = useNavigate();
 
     const toggleDropdown = (dropdown) => {
         setOpenDropdown(openDropdown === dropdown ? null : dropdown);
@@ -15,20 +17,24 @@ function Header() {
         setOpenDropdown(null);
     };
 
+    const handleOpen = (event) => {
+        navigate('/ContactForm')
+    }
+
     return (
         <>
             <nav className="navbar-custom">
                 <div className="navbar-container">
                     {/* Logo */}
-                    <a href="#" className="logo-link">
+                    <Link to="/" className="logo-link">
                         <img src={logo} alt="OngoleBulls" className="logo-img" />
-                    </a>
+                    </Link>
 
                     {/* Desktop Menu */}
                     <div className="desktop-menu">
                         <ul className="nav-links">
                             <li className="nav-item">
-                                <a href="#" className="nav-link">Home</a>
+                                <Link to="/" className="nav-link">Home</Link>
                             </li>
 
                             <li className="nav-item dropdown">
@@ -46,16 +52,13 @@ function Header() {
                                 </ul>
                             </li>
 
-                            <li className="nav-item dropdown">
-                                <a href="#" className="nav-link">
-                                    About Us <span className="icon-down">▾</span>
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li><a href="#">Who We Are</a></li>
-                                    <li><a href="#">Our Team</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                </ul>
-                            </li>
+
+
+                                    <Link to="/Aboutus" className="nav-link">About us</Link>
+
+
+
+
 
                             <li className="nav-item dropdown">
                                 <a href="#" className="nav-link">
@@ -69,7 +72,7 @@ function Header() {
                             </li>
 
                             <li className="nav-item">
-                                <a href="#" className="nav-link">Contact Us!</a>
+                                <Link to="/contactForm" className="nav-link">Contact Us!</Link>
                             </li>
 
                             <li className="nav-item">
@@ -92,15 +95,15 @@ function Header() {
             {/* Mobile Sidebar */}
             <div className={`mobile-sidebar ${sidebarOpen ? "active" : ""}`}>
                 <div className="sidebar-top">
-                    <a href="#" className="sidebar-logo">
+                    <Link to="/" className="sidebar-logo" onClick={closeSidebar}>
                         <img src={logo} alt="OngoleBulls" />
-                    </a>
+                    </Link>
                     <button className="close-btn" onClick={closeSidebar}>✕</button>
                 </div>
 
                 <ul className="mobile-menu">
                     <li>
-                        <a href="#" onClick={closeSidebar}>Home</a>
+                        <Link to="/" onClick={closeSidebar}>Home</Link>
                     </li>
 
                     <li className="mobile-dropdown">
@@ -144,7 +147,7 @@ function Header() {
                     </li>
 
                     <li>
-                        <a href="#" onClick={closeSidebar}>Contact Us!</a>
+                        <Link to="/contactForm" onClick={closeSidebar}>Contact Us!</Link>
                     </li>
 
                     <li>

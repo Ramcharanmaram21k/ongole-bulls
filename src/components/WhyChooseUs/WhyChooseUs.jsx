@@ -1,7 +1,11 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom'
 import './WhyChooseUs.css';
 
 const WhyChooseUs = () => {
+
+    const navigate = useNavigate();
+
     const reasons = [
         {
             id: 1,
@@ -41,6 +45,10 @@ const WhyChooseUs = () => {
         }
     ];
 
+    const handleClick = () => {
+        navigate('/AppointmentForm/' );
+    }
+
     return (
         <section className="why-choose-us-section">
             <div className="why-choose-us-container">
@@ -73,7 +81,7 @@ const WhyChooseUs = () => {
                     <p className="cta-subtitle">
                         Join thousands of satisfied clients who trust us with their financial future. Let's build your prosperity together.
                     </p>
-                    <button className="cta-button">Book a Free Consultation Today</button>
+                    <button className="cta-button" onClick={handleClick} >Book a Free Consultation Today</button>
                 </div>
             </div>
         </section>
