@@ -44,8 +44,8 @@ function Header() {
                                 <ul className="dropdown-menu">
                                     <li><a href="#">Wealth Management</a></li>
                                     <li><a href="#">Investment Management</a></li>
-                                    <li><a href="#">Mutual Fund</a></li>
-                                    <li><a href="#">PMS</a></li>
+                                    <li> <Link to='/MutualFund' >Mutual Fund</Link> </li>
+                                    <li><Link to='/PmsPage' >PMS</Link>   </li>
                                     <li><a href="#">HNI & Family Office Services</a></li>
                                     <li><a href="#">Stock Market & Bond Investments</a></li>
                                     <li><a href="#">Tax Optimization & Estate Planning</a></li>

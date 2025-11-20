@@ -5,6 +5,8 @@ import Footer from './components/Footer/Footer.jsx';
 import AppointmentForm from './RoutingPages/AppointmentForm/AppointmentForm.jsx';
 import ContactForm from './RoutingPages/ContactForm/ContactForm.jsx'
 import AboutUs from './RoutingPages/AboutUs/AboutUs.jsx';
+import MutualFund from './RoutingPages/MutualFund/MutualFund.jsx';
+import PmsPage from './RoutingPages/PmsPage/PmsPage.jsx';
 
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
                     <Route path="/AppointmentForm" element={<AppointmentForm />} />
                     <Route path="/ContactForm" element={<ContactForm /> } />
                     <Route path="/AboutUs" element={<AboutUs />} />
+                    <Route path='/MutualFund' element={<MutualFund/>}  />
+                    <Route path='/PmsPage' element={<PmsPage />} />
                 </Routes>
                 <Footer />
             </div>
